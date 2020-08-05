@@ -22,7 +22,7 @@ if [ -n "${PLUGIN_KUBERNETES_CERT}" ]; then
   KUBERNETES_CERT=${PLUGIN_KUBERNETES_CERT}
 fi
 
-kubectl config set-credentials default --token="${KUBERNETES_TOKEN}" --username="${PLUGIN_KUBERNETES_USER}"
+kubectl config set-credentials default --token="${KUBERNETES_TOKEN}"
 
 if [ -n "${KUBERNETES_CERT}" ]; then
   echo "${KUBERNETES_CERT}" | base64 -d > ca.crt
