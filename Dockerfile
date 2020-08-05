@@ -1,6 +1,6 @@
-FROM bitnami/kubectl:1.13
+FROM bitnami/kubectl:1.16.13
 
-LABEL maintainer "Sinlead <opensource@sinlead.com>"
+LABEL maintainer "DreamPathsProjekt <dream.paths.projekt@gmail.com>"
 
 COPY init-kubectl kubectl /opt/sinlead/kubectl/bin/
 
